@@ -11,5 +11,6 @@ deployment:
     tag: /[0-9]+\.[0-9]+\.[0-9]+/
     owner: lifeisfoo
     commands:
+      - docker build -t lifeisfoo/sbcl-production:$CIRCLE_TAG .
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
       - docker push lifeisfoo/sbcl-production:$CIRCLE_TAG
