@@ -1,5 +1,7 @@
 # SBCL production
 
+[![CircleCI](https://circleci.com/gh/lifeisfoo/sbcl-production.svg?style=svg)](https://circleci.com/gh/lifeisfoo/sbcl-production)
+
 A Docker image to run Common Lisp software in production (Ubuntu LTS+SBCL+Quicklisp).
 
 ## Usage
